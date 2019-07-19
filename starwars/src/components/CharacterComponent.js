@@ -37,7 +37,17 @@ function CharacterComponent() {
 
   // Step 4 - add props/data content inside functions in created files containing components (App.js and ChracterCard.js)
 
-   
+   // Step 5 - return CardComponent function below using state to add CharacterCard component 
+
+  return (
+    // Set props for each component (Card and Explanation) by applying them to state variable defined in UseState const [data]
+    // Look at file structure to look at which props to use and where. App contains CardView. CardView contains Card and Explanation (added below with <Card /> and <Explanation />). Card contains title, date, image (from api). Explanation contains explanation (from api).
+
+    <div className="CardView">
+      <CharacterCard data={data} />
+    </div>
+  );
+}
 
 
 
