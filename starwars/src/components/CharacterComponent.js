@@ -6,8 +6,8 @@
 
 import React, { useState, useEffect } from "react";
 
-import CharacterCard from "./components/CharacterCard";
-
+import CharacterCard from "./CharacterCard";
+// be sure to install using npm install axios 
 import Axios from "axios";
 
 // Step 3 - fetching the data with useState and useEffect inside function
