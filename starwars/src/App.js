@@ -9,8 +9,6 @@ import CharacterComponent from "./components/CharacterComponent";
 
 // Step 4 - add props/data content inside functions in created files containing components (App.js and ChracterCard.js)
 
-// Step 4 - add props/data content inside functions in created files containing components (Card.js, Explanation.js, App.js)
-
 function App() {
   return (
     // Try to think through what state you'll need for this app before starting. Then build out

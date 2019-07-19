@@ -12,11 +12,12 @@ function CharacterCard(props) {
   //console.log(props.data);
   //console.log("Character card props", props);
   //console.log("Character card name props", props.data);
-  //console.log("Character card name props", props.data.results);
+    console.log("Character card name props", props.data.results);
   //console.log("Character card gender props", props.data.gender);
-  
+
   return (
     
+
     // for props.data.name (props from parameter defined in above Card function, data from useState state variable, name is the content you want to grab/display from the api (https://swapi.co/api/people/)
     // for props.data.gender (props from parameter defined in above Card function, data from useState state variable, gender is the content you want to grab/display from the api (https://swapi.co/api/people/)
     <div className="Card">
@@ -26,5 +27,7 @@ function CharacterCard(props) {
       <h2>Weight: {props.data.mass}</h2> 
     </div>
     ); 
+
+}
 
 export default CharacterCard;
