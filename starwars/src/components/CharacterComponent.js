@@ -36,6 +36,7 @@ function CharacterComponent() {
 
   // Step 5 - return CardComponent function below using state to add CharacterCard component
 
+  // Added if else to fix undefined mapping issue
   if (data.results === undefined) {
     return <div />;
   } else {
