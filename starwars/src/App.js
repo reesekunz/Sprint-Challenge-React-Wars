@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 
+// App contains CharacterComponent (added below with import CharacterComponent). CharacterComponent contains CharacterCard. CharacterCard contains name and gender (from api) - go back and add more character attributes later.
+
+import CharacterComponent from "./components/CharacterComponent";
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
