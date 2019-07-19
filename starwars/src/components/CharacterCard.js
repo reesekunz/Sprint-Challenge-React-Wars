@@ -5,24 +5,26 @@
 
 import React from "react";
 
-  // Step 4 - add props/data content inside functions in created files containing components (App.js and ChracterCard.js)
-    // Attributes I want to return initally from api: name and gender 
-  function CharacterCard(props) {
-    //console.log(props.data);
-    console.log("Character card name props", props.data.name);
-    //console.log("Character card gender props", props.data.gender);
+// Step 4 - add props/data content inside functions in created files containing components (App.js and ChracterCard.js)
+// Attributes I want to return initally from api: name and gender
+function CharacterCard(props) {
+    console.log("props", props);
+  //console.log(props.data);
+  //console.log("Character card props", props);
+  //console.log("Character card name props", props.data);
+  //console.log("Character card name props", props.data.results);
+  //console.log("Character card gender props", props.data.gender);
+  
+  return (
     
- // {props.data.map(character => {
-  // console.log(character); }
-
-    return (
-      // for props.data.name (props from parameter defined in above Card function, data from useState state variable, name is the content you want to grab/display from the api (https://swapi.co/api/people/)
-      // for props.data.gender (props from parameter defined in above Card function, data from useState state variable, gender is the content you want to grab/display from the api (https://swapi.co/api/people/)
-      <div className="Card">
-        <h2>Name: {props.data.name} </h2>
-        <p>Gender: {props.data.gender}</p>
-      </div>
-    ); }
- // ) } 
+    // for props.data.name (props from parameter defined in above Card function, data from useState state variable, name is the content you want to grab/display from the api (https://swapi.co/api/people/)
+    // for props.data.gender (props from parameter defined in above Card function, data from useState state variable, gender is the content you want to grab/display from the api (https://swapi.co/api/people/)
+    <div className="Card">
+     <h2>Name: {props.data.name} </h2>
+      <h2>Gender: {props.data.gender}</h2>
+      <h2>Height: {props.data.height} </h2>
+      <h2>Weight: {props.data.mass}</h2> 
+    </div>
+    ); 
 
 export default CharacterCard;

@@ -38,11 +38,13 @@ function CharacterComponent() {
   // Step 5 - return CardComponent function below using state to add CharacterCard component
 
   return (
-    // Set props for each component (Card and Explanation) by applying them to state variable defined in UseState const [data]
-    // Look at file structure to look at which props to use and where. App contains CardView. CardView contains Card and Explanation (added below with <Card /> and <Explanation />). Card contains title, date, image (from api). Explanation contains explanation (from api).
-
-    <div className="CardView">
-      <CharacterCard data={data} />
+    // Set props for each component (Card and Explanation) by applying them to state variable defined in UseState const [data] */}
+    // Look at file structure to look at which props to use and where. App contains CardView. CardView contains Card and Explanation (added below with <Card /> and <Explanation />). Card contains title, date, image (from api). Explanation contains explanation (from api). */}
+    // Use .map() to iterate over your array data and return a component
+    <div>
+      {data.map(n => (
+        <CharacterCard data={data} />
+      ))}
     </div>
   );
 }
