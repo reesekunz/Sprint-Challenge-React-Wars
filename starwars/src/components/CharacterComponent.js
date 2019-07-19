@@ -37,7 +37,7 @@ function CharacterComponent() {
 
   // Step 4 - add props/data content inside functions in created files containing components (App.js and ChracterCard.js)
 
-
+   
 
 
 
