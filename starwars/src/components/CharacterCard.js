@@ -30,7 +30,7 @@ function CharacterCard(props) {
   //console.log(props.data);
   //console.log("Character card props", props);
   //console.log("Character card name props", props.data);
-  console.log("Character card name props", props.data.results);
+  //console.log("Character card name props", props.data.results);
   //console.log("Character card gender props", props.data.gender);
 
   return (
